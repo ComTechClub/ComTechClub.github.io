@@ -25,7 +25,7 @@ header {
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
 }
@@ -38,14 +38,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 nav ul {
@@ -54,7 +52,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -70,14 +68,12 @@ nav ul li a:hover {
 .logo {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    order: -1;
+    margin-right: 20px;
 }
 
 .logo img {
     height: 20px;
     width: auto;
-    margin-left: 10px;
 }
 
 .logo:hover {
@@ -130,8 +126,6 @@ nav ul li a:hover {
         margin-left: 10px;
     }
 
-    }
-
     nav {
         order: 2;
     }
@@ -140,7 +134,8 @@ nav ul li a:hover {
         order: 3;
         margin-right: 20px;
     }
-    
+}
+
 @media (min-width: 769px) {
     .nav-container {
         justify-content: center;
