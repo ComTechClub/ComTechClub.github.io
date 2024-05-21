@@ -213,7 +213,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .hero button:hover {
