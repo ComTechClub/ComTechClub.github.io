@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 1000vh;
+    min-height: 200vh;
     padding-top: 60px;
 }
 
@@ -139,10 +139,12 @@ nav ul li a:hover {
 @media (min-width: 769px) {
     .nav-container {
         justify-content: center;
+        display: flex;
     }
 
     nav {
         justify-content: center;
+        display: flex;
     }
 
     .menu-toggle {
@@ -219,3 +221,50 @@ nav ul li a:hover {
 .hero button:hover {
     background-color: #777;
 }
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 250px 20px;
+    background-color: #ffffff00;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.about p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    padding: 0 10px;
+}
+
+
+@media (min-width: 1024px) {
+    .about {
+        padding: 250px 20px;
+    }
+
+    .about h2 {
+        font-size: 70px;
+    }
+
+    .about p {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .about p span {
+        display: block;
+    }
+}
+

@@ -28,3 +28,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var informationLink = document.querySelector('.nav-menu li a[href="Information"]');
+    
+    informationLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 700,
+            behavior: 'smooth'
+        });
+    });
+});
