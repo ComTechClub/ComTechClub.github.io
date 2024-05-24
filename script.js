@@ -40,3 +40,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var informationLink = document.querySelector('.nav-menu li a[href="Contact"]');
+    
+    informationLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    });
+});
