@@ -19,7 +19,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #333;
+    background-color: #333333dc;
     padding: 10px 0;
     position: fixed;
     top: 0;
@@ -28,6 +28,7 @@ header {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .scroll-up {
@@ -92,6 +93,8 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        position: absolute;
+        right: 0px;
     }
     
     nav ul {
@@ -99,9 +102,9 @@ nav ul li a:hover {
         flex-direction: column;
         width: 100%;
         text-align: center;
-        background-color: #333;
+        background-color: #333333dc;
         position: absolute;
-        top: 50px;
+        top: 40px;
         left: 0;
     }
 
@@ -123,7 +126,7 @@ nav ul li a:hover {
 
     .logo {
         order: 1;
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     nav {
